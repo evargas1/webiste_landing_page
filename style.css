@@ -17,6 +17,7 @@ body{
 }
 .wave{
     position: absolute;
+    /* height: 100%; */
     width: 100%;
     bottom: -80px;
     /* color: #fff; */
@@ -76,5 +77,38 @@ header ul li a{
 }
 .content a.color1{
     background-color: #ffc107;
+}
+.our-partners{
+    padding: 0 80px;
+    position: relative;
+    background-color: #a2d9ff;
+}
+.our-partners h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.our-partners hr{
+    border: none;
+    height: 4px;
+    width: 100px;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+.our-partners-inner a{
+    display: inline-block;
+    width: 14%;
+    padding: 15px;
+    margin-right: 25px;
+    border: 1px solid #cacaca;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 #cacaca ;
+    background-color: #fff;
+
+
+}
+.our-partners-inner img{
+    width: 100%;
+    min-height:50px;
+    
 }
 
