@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02897945be.js" crossorigin="anonymous"></script>
   
 </head>
 <body>
@@ -22,23 +25,25 @@
                     <li><a href="#">Partners</a></li>
                     <li><a href="#">Faq</a></li>
                     <li><a href="#">Blog</a></li>
-
+                    <div onclick="openNav()" class="dropdown">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </ul>
             </div>
-            <div class="dropdown">
-                <i class="fas fa-hamburger"></i>
-            </div>
-            <div class="overlay">
+           
+            <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Blog</a></li>
+                   
+                    <a href="#"><i class="fas fa-home fa-1x" style="color: #fff;"></i> Home</a>
+                    <a href="#"><i class="fab fa-angellist fa-1x" style="color: #fff;"></i> About</a>
+                    <a href="#"><i class="fas fa-handshake fa-1x" style="color: #fff;"></i> Partners</a>
+                    <a href="#"><i class="fas fa-question fa-1x" style="color: #fff;"></i> Faq</a>
+                    <a href="#"><i class="fas fa-blog fa-1x" style="color: #fff;"></i> Blog</a>
     
-                    </ul>
+                    
                 </div>
 
             </div>
