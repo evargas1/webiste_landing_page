@@ -24,23 +24,28 @@ body{
     opacity: 1;
 }
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 80px;
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.6));
+    padding: 30px 80px;
+    background: linear-gradient(to top, transparent, rgba(14, 13, 13, 0.8));
     display: inline;
+    z-index: 22;
 }
+
 header .logo{
     font-size: 28px;
     font-weight: 700;
     color: #fff;
     float: left;
+    /* top: 20%; */
 }
 header .menu{
     float: right;
-    margin-top: 5px;
+    /* top: 20%; */
+    right: 0;
+    /* margin-top: px; */
 }
 header ul{
     display: inline-flex;
@@ -127,6 +132,28 @@ header ul li a{
     margin: 6px 0;
     
 }
+@media only screen and (max-width: 1200px){
+    .our-partners-inner a{
+        margin-top: 20px;
+        padding: 15px;
+        flex-basis: 100%;
+        min-width: 400px;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .our-partners hr{
+        visibility: hidden;
+    }
+    .overlay{
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-top: 60px;
+
+    }
+    
+
+}
 
 
 /* reponsive feature tablet screen for only nav */
@@ -149,9 +176,55 @@ header ul li a{
        
         /* display: flex; */
     }
+    .content{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .content a{
+        margin-top: 10px;
+    }
+    .wave{
+        visibility: hidden;
+    }
+    .our-partners h3{
+        font-size: 40px;
+        margin: 15px;
+        align-items: center;
+    }
+    .content .btn-group{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    } 
+
+    /* our partners responsive section */
+    .our-partners{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .our-partners-inner a{
+        margin-top: 20px;
+        padding: 15px;
+        flex-basis: 80%;
+        min-width: 400px;
+    }
+    .float-left{
+        float: right;
+    }
+    .overlay{
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-top: 70px;
+
+    }
+  
 
 
 }
+
 /* responsive for nav header for phones  */
 @media only screen and (max-width: 400px){
     .overlay{
@@ -167,27 +240,42 @@ header ul li a{
        
         /* display: flex; */
     }
+    
 
 }
 
 
 
-.content{
+
+/* .content{
     max-width: 55%;
     padding: 200px 80px 0;
+    color: #fff;
+  
+}
+
+/* .content p{
+    font-size: 20px;
+    padding: 25px 0;
+    font-weight: 300;
+} */
+.content p{
+    font-size: 20px;
+    padding: 25px 0;
+    font-weight: 400;
     color: #fff;
 }
 .content h1{
     font-size: 48px;
+    color: #fff;
 }
-.content p{
-    font-size: 20px;
-    padding: 25px 0;
-    font-weight: 300;
+.content{
+    margin-top: 150px;
+    margin-left: 50px;
 }
 .content .btn-group{
     margin-top: 45px;
-}
+} 
 .content a{
     display: inline-block;
     padding: 15px 45px;
@@ -202,10 +290,12 @@ header ul li a{
     padding: 0 80px;
     position: relative;
     background-color: #a2d9ff;
+    padding-bottom: 40px;
 }
 .our-partners h3{
     font-size: 28px;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 .our-partners hr{
     border: none;
@@ -231,4 +321,97 @@ header ul li a{
     min-height:50px;
     
 }
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 400px;
+}
+/* the why you should do bussiness with us section */
+.why-us{
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: rgb(211, 198, 181);
+    padding: 10%;
+
+}
+.center{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.center h1{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+}
+.col-4{
+    flex-basis: 25%;
+    min-width: 240px;
+    margin-top: 30px;
+
+}
+.col-center{
+    text-align: center;
+}
+.col-4 h4{
+    margin-top: 30px;
+}
+.center a{
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(104, 87, 87);
+}
+.center a:hover{
+    color: orange;
+
+}
+.top-padding{
+    margin-top: 20px;
+}
+.car-sec-middle{
+    height: 60vh;
+    background-color: orange;
+}
+.car-sec-middle h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* carsouel images */
+.overlay{
+    position: absolute;
+    /* bottom: 0; */
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+.item:hover .overlay{
+    opacity: 1;
+}
+
+
+/* whats new with us today */
 

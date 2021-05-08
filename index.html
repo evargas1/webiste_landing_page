@@ -11,12 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/02897945be.js" crossorigin="anonymous"></script>
+    
+
+    <!-- owl carsouel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
   
 </head>
 <body>
 
     <div class="wrap">
-        <header>
+        <header id="header" class="active">
             <div class="logo">Logo</div>
             <div class="menu">
                 <ul>
@@ -49,14 +55,33 @@
             </div>
         </header>
 
-        <div class="content">
-            <h1>Dream home is ready for upcoming booking</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatum quae, suscipit autem fugit maiores dolorem. </p>
-            <div class="btn-group">
-                <a href="#" class="color1">Book Now</a>
-                <a href="#">Learn More</a>
+        
+
+
+
+        <!-- responsive container -->
+        <div class="small-container">
+        
+            <div class="row">
+                <div class="col-2">
+                    <div class="content">
+                        <h1>Dream home is ready for upcoming booking</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa voluptatum quae, suscipit autem fugit maiores dolorem. </p>
+                        <div class="btn-group">
+                            <a href="#" class="color1">Book Now</a>
+                            <a class="color1" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- exculsive product -->
+                </div>
+                <div class="col-2">
+                    
+                    
+                </div>
             </div>
         </div>
+        
 
         <!-- waves  -->
 
@@ -70,19 +95,137 @@
          <h3>Our Partners </h3>
          <hr>
          <div class="our-partners-inner">
-             <a href="#"><img src="./images/better airbnb.png" alt=""></a>
-             <a href="#" class=""> <img src="./images/doordash.png" alt=""></a>
+             <a  href="#"><img src="./images/better airbnb.png" alt=""></a>
+             <a class="float-left" href="#" class=""> <img src="./images/doordash.png" alt=""></a>
             
              <a href="#"><img src="./images/korean_airlines.png" alt=""></a>
-             <a href="#"><img src="./images/singapore_airlines.png" alt=""></a>
+             <a class="float-left" href="#"><img src="./images/singapore_airlines.png" alt=""></a>
              <a href="#"><img src="./images/starbucks.png" alt=""></a>
-             <a href="#"> <img src="./images/doordash.png" alt=""></a>
+             <a class="float-left" href="#"> <img src="./images/doordash.png" alt=""></a>
          </div>
     </div>
+<!-- the why book with us section -->
+<div class="why-us">
+    
+    <div class="center">
+        <h1>why Book with us?</h1>
+        <a href="#">Learn More </a>&#10230;
+    </div>
+    <div class="row">
+        <div class="col-4 col-center">
+            <i class="fas fa-stamp fa-3x" class="top-padding" style="color: rgb(90, 86, 86);"></i>
+            <h4>Best Selected Activities</h4>
+
+        </div>
+        <div class="col-4 col-center">
+            <i class="fas fa-anchor fa-3x" class="top-padding" style="color: rgb(90, 86, 86);"></i>
+            <h4>100% Secure Payments</h4>
+
+        </div>
+        <div class="col-4 col-center">
+            <i class="fas fa-money-check-alt fa-3x" class="top-padding" style="color: rgb(90, 86, 86);"></i>
+            <h4>No Booking Fees</h4>
+
+        </div>
+        <div class="col-4 col-center">
+            <i class="fas fa-concierge-bell fa-3x" class="top-padding" style="color: rgb(90, 86, 86);"></i>
+            <h4>No Membership Required  </h4>
+
+        </div>
+       
+    </div>
+</div>
+<!-- end of why book with us section -->
+
+<!-- Whats new with us section-->
 
 
+
+
+
+
+
+
+
+
+
+
+
+<!-- carsoul with destinations section -->
+<div class="car-sec-middle">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="./images/travel-1.jpg" alt="">
+            <div class="overlay">South Island, New Zealand
+            </div>
+        </div>
+        <div class="item">
+            <img src="./images/travel-2.jpg" alt="">
+            <div class="overlay">Barcelona</div>
+        </div>
+        <div class="item">
+            <img src="./images/travel-3.jpg" alt="">
+            <div class="overlay">Bali</div>
+        </div>
+        <div class="item">
+            <img src="./images/travel-4.jpg" alt="">
+            <div class="overlay">Florence</div>
+        </div>
+        <div class="item">
+            <img src="./images/travel-5.jpg" alt="">
+            <div class="overlay">Amsterdam</div>
+        </div>
+        <div class="item">
+            <img src="./images/travel-6.jpg" alt="">
+            <div class="overlay">Costa Rica</div>
+        </div>
+        <div class="item">
+            <img src="./images/travel-7.jpg" alt="">
+            <div class="overlay">Rio De Janerio</div>
+        </div>
+        <div class="item">
+            <img src="./images/travel-8.jpg" alt="">
+            <div class="overlay">Tahiti</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+ <!-- stagePadding: 50 -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+<!-- carsouel javascript -->
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplay: false,
+        autoplayTimeout: 1000,
+       
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+</script>
 <!-- js nav code -->
 <script>
+  
+
+
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
     }
@@ -90,6 +233,11 @@
         document.getElementById("myNav").style.width = "0%";
     }
 </script>
+<!-- making the header sticky -->
+
+				
+
+
     
 </body>
 </html>
